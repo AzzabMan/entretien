@@ -19,8 +19,6 @@ public class CalcServiceImpl implements CalcService {
 			Price price) throws CalcException {
 		logger.debug("Performing caculation for instrument instrumentId: " + instrumentId);
 		// Doing some calculations here using Price info ...
-//		BigDecimal bidprice = ((PriceBidOffer)price).getBid();
-//		BigDecimal offerprice = ((PriceBidOffer)price).getOffer();
 		
 		Collection<CalcResult> res = new ArrayList<>();
 		res.add(new CalcResult() {
